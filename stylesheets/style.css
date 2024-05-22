@@ -1,0 +1,26 @@
+h1 {
+    color:white; 
+    font-weight: bold;
+    text-align: center;
+}
+
+.titulo{
+    height: 10vh;
+    background-color: #8999ec;
+
+}
+
+
+h2 {
+    color: rgb(45, 45, 238); 
+    font-weight: bold;
+    font-family: Georgia, serif;
+}
+
+p {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color:rgb(198, 198, 226);
+}
