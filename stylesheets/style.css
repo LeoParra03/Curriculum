@@ -1,13 +1,26 @@
+
+
 h1 {
     color:white; 
     font-weight: bold;
     text-align: center;
+    margin: 0
 }
 
 .titulo{
     height: 10vh;
     background-color: #8999ec;
-
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    box-shadow: 
+   rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+   rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+   rgba(0, 0, 0, 0.12) 0px 4px 6px,
+   rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+   rgba(0, 0, 0, 0.09) 0px -3px 5px; 
 }
 
 
@@ -23,4 +36,54 @@ p {
 
 body {
     background-color:rgb(198, 198, 226);
+}
+
+nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding predeterminado */
+    margin: 0; /* Elimina el margen predeterminado */
+    display: flex; /* Utiliza Flexbox para la disposición horizontal */
+    justify-content: center; /* Opcional: centra la lista horizontalmente dentro del contenedor nav */
+}
+
+/* Estilos para los elementos de la lista */
+nav ul li {
+    margin: 0 10px; /* Añade espacio horizontal entre los elementos de la lista */
+}
+
+/* Estilos para los botones */
+nav ul li button {
+    background-color: #8999ec; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border: 2px solid black;
+    box-shadow: 
+   rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+   rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+   rgba(0, 0, 0, 0.12) 0px 4px 6px,
+   rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+   rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+}
+
+/* Estilos para los enlaces dentro de los botones */
+nav ul li button a {
+    color: white; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+/* Opcional: añadir estilos de hover */
+nav ul li button:hover {
+    background-color: #6578c4; /* Cambia el color de fondo al pasar el mouse */
+}
+
+section{
+    margin-bottom: 50px;
+    margin-left: 20px
+}
+
+section div ul li {
+    margin-bottom: 10px;
+    font-family:Arial, Helvetica, sans-serif;
 }
