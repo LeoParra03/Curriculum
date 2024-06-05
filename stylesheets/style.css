@@ -29,6 +29,33 @@ h2 {
     font-weight: bold;
     font-family: Georgia, serif;
 }
+.h2{
+    margin: 20px;
+    color: rgb(45, 45, 238); 
+    font-weight: bold;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+#h2{
+    margin-top: 40px;
+    color: rgb(45, 45, 238); 
+    font-weight: bold;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+.h3{
+    font-family: Georgia, serif;
+    padding-left: 20px;
+    color: rgb(45, 45, 238); 
+   
+}
+
+.h22{
+    margin-top: 0%;
+    font-family: Georgia, serif;
+    color: rgb(45, 45, 238); 
+    text-align: center;
+}
 
 p {
     font-family:Arial, Helvetica, sans-serif;
@@ -88,14 +115,224 @@ section div ul li {
     font-family:Arial, Helvetica, sans-serif;
 }
 
-#informacion-personal{
-    flex-basis: 40%;
-    flex-grow: 1;
+.mapa{
+    margin: 20px 0 0 0;
+    width: 100%;
 }
 
-#educacion{
-    flex-basis: 40%;
-    flex-grow: 1;
+
+.perfil-contenedor {
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 20px; /* Espaciado interno */
+    background-color: #9fabe6;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+   
 }
 
+.perfil-foto img {
+    border-radius: 30%;
+    width: 200px;
+    height: 200px;
+    max-width: 200px;
+    object-fit: cover;
+    border: 2px solid #8999ec;
+    flex: auto;
+}
+
+.perfil-info, .perfil-educacion {
+    border-left: 2px dotted  #6578c4;
+    border-right: 2px dotted  #6578c4;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 25%;
+}
+
+.perfil-info h2, .perfil-educacion h2 {
+    margin-top: 0;
+}
+
+.lenguaje-contenedor {
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content:center;
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 20px; /* Espaciado interno */
+    background-color: null;
+    
+    margin-bottom: 20px;
+    margin-top: 20px;
+    flex-direction: row;
+    width: 100%;
+}
+
+.img-lengua {
+    display: flex;
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+.img-lengua img {
+    width: 150px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: 150px;
+    object-fit: contain;
+    border: 2px solid #6578c4;
+    border-radius: 5px; /* Opcional: añade un poco de borde redondeado */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.herramienta-contenedor {
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content:center;
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 20px; /* Espaciado interno */
+    background-color: null;
+    
+    margin-bottom: 20px;
+    margin-top: 20px;
+    flex-direction: row;
+    width: 100%;
+}
+
+.img-herramienta {
+    display: flex;
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+.img-herramienta img {
+    width: 150px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: 150px;
+    object-fit: contain;
+    border: 2px solid #6578c4;
+    border-radius: 5px; /* Opcional: añade un poco de borde redondeado */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.flex-cont{
+    display: flex;
+    gap: 20px;
+}
+.exper-content, .educacion-content {
+    display: flex;
+    align-items: center; /* Alinea los elementos al inicio verticalmente */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 20px; /* Espaciado interno */
+    background-color: #9fabe6;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    flex-direction: row;
+    width: 50%; /* Ajusta el ancho al 100% para ocupar el espacio */
+    justify-content: center;
+}
+
+
+.exper-content {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 20px; /* Espaciado interno */
+    background-color: #9fabe6;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    flex-direction: row;
+    width: 50%; /* Ajusta el ancho al 100% para ocupar el espacio */
+    justify-content: space-between; /* Alinea el contenido horizontalmente con espacio entre los elementos */
+}
+
+.exper-text {
+    flex: 2; /* El texto de la experiencia ocupará más espacio */
+}
+
+.video-container {
+    flex: 1; /* El video ocupará menos espacio */
+    display: flex;
+    justify-content: center; /* Centra el video horizontalmente dentro del contenedor */
+}
+
+.video-container iframe {
+    max-width: 100%; /* Asegura que el video no se salga del contenedor */
+    height: auto; /* Mantiene la relación de aspecto del video */
+}
+
+
+.img-edu {
+    display: flex;
+    gap: 10px; 
+}
+
+.img-edu img {
+    width: 200px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: 200px;
+    object-fit: contain;
+    border: 2px solid #6578c4;
+    border-radius: 50%; /* Opcional: añade un poco de borde redondeado */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contact {
+    width: 90%;
+    margin: 50px 20px 0;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "textarea input"
+        "textarea input"
+        "textarea input";
+}
+.form__input {
+    background-color: #fffffe;
+    padding: 10px;
+    color: #020826;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px; /* Add some margin for better spacing */
+}
+
+.form__input--submit {
+    background-color: #668dc0;
+    color: #fffffe;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px; /* Smaller padding */
+    border-radius: 10px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto; /* Two equal columns for inputs and one auto column for the submit button */
+    gap: 10px; /* Space between inputs */
+    align-items: center; /* Vertically center the items */
+}
+
+textarea.form__input {
+    width: 100%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+#Contacto {
+    margin-top: 20px;
+    align-items: center;
+
+}
+
+.pie{
+    border: none;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px 0;
+}
 
