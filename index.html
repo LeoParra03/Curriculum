@@ -14,41 +14,43 @@
 </head>
 
 <body>
-    <header>
-        <h1 class="titulo"> Currículum Vitae</h1>
-
+    <header class="header">
+        <div class="logo">
+            <h1>Currículum Vitae</h1>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><button><a href="#informacion-personal">Información Personal</a></button></li>
+                <li><button><a href="#acerca-de-mi">Acerca de mí</a></button></li>
+                <li><button><a href="#experiencia">Experiencia</a></button></li>
+                <li><button><a href="#habilidades">Habilidades</a></button></li>
+                <li><button><a href="#educacion">Educación</a></button></li>
+                <li><button><a href="#contacto">Contáctanos</a></button></li>
+                <li><button><a href="#mapa">Encuéntranos</a></button></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><button><a href="#informacion-personal">Informacion Personal</a></button></li>
-            <li><button><a href="#Acerca de mi">Acerca de mi</a></button></li>
-            <li><button><a href="#experiencia">Experiencia</a></button></li>
-            <li><button><a href="#h2">Habilidades</a></button></li>
-            <li><button><a href="#experiencia">Experiencia</a></button></li>
-            <li><button><a href="#educacion">Educación</a></button></li>
-            <li><button><a href="#Contacto">Contactanos</a></button></li>
-            <li><button><a href="#Mapa">Encuentranos</a></button></li>
-        </ul>
-    </nav>
-
-    <div class="perfil-contenedor">
-        <div class="perfil-foto">
-            <img src="fotos/fotoperfil.png" alt="Foto de perfil">
-        </div>
-        <div class="perfil-info" id="informacion-personal">
-            <h2>Información Personal</h2>
-            <p>Nombre: <span>Leonardo Parra</span></p>
-            <p>Dirección: <span>Brisas del Norte</span></p>
-            <p>Teléfono: <span>0983905978</span></p>
-            <p>Correo electrónico: <span>lparraf2003@gmail.com</span></p>
-        </div>
-        <div class="perfil-educacion" id="Acerca de mi">
+    <div class="container">
+        <!-- Contenido del CV -->
+        <h2>Información Personal</h2>
+        <section id="informacion-personal" class="informacion-personal">
+            <div class="personal-info">
+                <!-- Imagen de la persona -->
+                <div class="personal-image">
+                    <img src="fotos/fotoperfil.png" alt="Foto de Leonardo Parra Franco">
+                </div>
+                <!-- Información de la persona -->
+                <div class="personal-details">
+                    <h2>Hola, Soy Leonardo Parra Franco</h2>
+                    <p>Soy desarrollador web apasionado por crear soluciones digitales innovadoras. Tengo experiencia en desarrollo front-end y back-end, y siempre estoy buscando nuevas tecnologías para mejorar mis habilidades.</p>
+                </div>
+            </div>
+        </section>
+        <section id="acerca-de-mi" class="acerca-de-mi">
             <h2>Acerca de mí</h2>
-            <p>Estudiante Politecnico que le gusta los videojuegos y los deportes. Curso en la carrera de Computación y me encanta hacer proyectos grupales, espero poder contriuir en el futuro con soluciones tecnologicas innovadoras. Actualemente mi objetivo es graduarme y convertirme en un ingeniero en Computación.</p>
-            
-        </div>
-    </div>
+            <p>Soy estudiante de Ingeniería en Sistemas con gran pasión por la tecnología. Me motiva explorar nuevas herramientas y lenguajes para resolver problemas de manera eficiente y creativa. Disfruto enfrentar desafíos que me permitan crecer profesionalmente y colaborar con equipos enfocados en la innovación. Mi objetivo es seguir aprendiendo y aportar soluciones efectivas en el ámbito tecnológico.</p>
+        </section>
     
     <h2 id="h2">Habilidades</h2>
     <h3 class="h3">Lenguajes de programación</h3>
@@ -82,63 +84,78 @@
 
     </div>
 
-   <div class="flex-cont">
-    <div class="exper-content">
-    <section id="experiencia">
-        
 
-        <div class="text">
-        <h2 class="h22">Experiencia</h2>
-        <p>
-            <b>Cargo:</b> Lorem ipsum dolor sit amet consectetur adipiscing elit eget faucibus, lectus ligula id aenean iaculis et blandit hac dis nec, vestibulum erat porttitor dui ultrices primis eros nulla. 
-        </p>
-            <b>Empresa:</b> Semper pellentesque lectus aptent erat platea feugiat molestie facilisi enim euismod, nibh scelerisque sociis velit bibendum pulvinar 
-        </p>
-        <p>
-            <b>Fechas:</b> A vehicula lacus montes platea luctus vel dictumst suscipit orci arcu, potenti fames ultricies parturient nullam 
-        </p>
-        <p>
-            <b>Descripción:</b> Mus justo senectus blandit fermentum tempus porta aliquet eu tristique, eros at nec dis accumsan taciti primis.
-
-        </p>
-    </div>
-
-    <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/HAWg6unSyKA?si=H1aCgrR2MBptNhWa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-
+    <section id="proyectos" class="proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyectos-contenedor">
+            <!-- Contenedor de Proyecto 1 -->
+            <div class="proyecto-item">
+                <a href="https://github.com/Jeremy-Poveda/Custom-Emoji-Creator">
+                    <img src="fotos/emoji.png" alt="Custom Emoji Creator" style="width: 270px; height: 200px;">
+                </a>
+            </div>
+            
+            <!-- Contenedor de Proyecto 2 -->
+            <div class="proyecto-item">
+                <a href="https://gitlab.com/EmilioSG23/portal-logs">
+                    <img src="fotos/portal.png" alt="Portal Logs" style="width: 270px; height: 200px;">
+                </a>
+            </div>
+    
+            <!-- Contenedor de Proyecto 3 -->
+            <div class="proyecto-item">
+                <a href="https://github.com/kevinMaga/ProyectoLP_Analizador">
+                    <img src="fotos/analizador.png" alt="Analizador" style="width: 270px; height: 200px;">
+                </a>
+            </div>
+        </div>
     </section>
-    </div>
+    
+        
+    </section>
+
+   <div class="flex-cont">
+    
+       
+    
 
    
     <div class="educacion-content">
     <section id="educacion">
         <h2 class="h22">Educación</h2>
         <div class="img-edu">
+            
             <a href="https://www.espol.edu.ec/es"><img src="fotos/logo-gris.png" alt="Espol"></a>
+            
             <a href="https://ipac.edu.ec/"><img src="fotos/logo.png" alt="IPAC"></a>
         </div>
         
     </section>
     </div>
+
+   
+    <div class="exper-content">
+     <section >  
+        <h2 class="h2" id="Contacto">Contactanos</h2>
+  
+         <div>
+             
+             <form class="contact" action="#" method="post">
+         
+                 <input class="form__input" name="nombre" type="text" placeholder="Nombre" required="">
+                 <input class="form__input" name="email" type="email" placeholder="Email" required="">
+                 <textarea class="form__input" placeholder="Mensaje: " cols="30" rows="10" name="mensaje" required=""></textarea>
+                 <input class="form__input form__input--submit" id="button__submit" type="submit" value="Enviar">
+ 
+             </form>
+         </div>
+     </section>
+ </div>
+
    </div>
 
 
-   <h2 class="h2" id="Contacto">Contactanos</h2>
-    <section >    
-        <div>
-            
-            <form class="contact" action="#" method="post">
-        
-                <input class="form__input" name="nombre" type="text" placeholder="Nombre" required="">
-                <input class="form__input" name="email" type="email" placeholder="Email" required="">
-                <textarea class="form__input" placeholder="Mensaje: " cols="30" rows="10" name="mensaje" required=""></textarea>
-                <input class="form__input form__input--submit" id="button__submit" type="submit" value="Enviar">
-
-            </form>
-        </div>
-    </section>
-
+   
     <section id="Mapa">
       <div>
             <h2 class="h2">Encuentranos</h2>
